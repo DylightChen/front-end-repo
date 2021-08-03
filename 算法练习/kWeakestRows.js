@@ -2,9 +2,9 @@
  * @Author: Dylight
  * @Date: 2021-07-31 00:20:46
  * @LastEditors: Dylight
- * @LastEditTime: 2021-08-03 12:38:45
- * @FilePath: /Algorithm/c.js
- * @Description: 
+ * @LastEditTime: 2021-08-03 13:56:49
+ * @FilePath: /Algorithm/算法练习/kWeakestRows.js
+ * @Description: 找出含1最少的数组
  */
 var kWeakestRows = function(mat, k) {
     let map = new Map()
