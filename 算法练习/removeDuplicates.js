@@ -2,9 +2,9 @@
  * @Author: Dylight
  * @Date: 2021-08-10 10:17:54
  * @LastEditors: Dylight
- * @LastEditTime: 2021-08-11 11:02:24
+ * @LastEditTime: 2021-08-11 11:04:55
  * @FilePath: /Algorithm/算法练习/removeDuplicates.js
- * @Description: 规定空间复杂度为o（1）
+ * @Description: 删除重复项 规定空间复杂度为o（1）
  */
 
 var removeDuplicates = function (nums) {
