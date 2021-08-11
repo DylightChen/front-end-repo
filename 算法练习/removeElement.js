@@ -2,9 +2,9 @@
  * @Author: Dylight
  * @Date: 2021-08-04 10:22:53
  * @LastEditors: Dylight
- * @LastEditTime: 2021-08-10 10:09:12
- * @FilePath: /Algorithm/2.js
- * @Description:移除元素 规定复杂度为o(n)
+ * @LastEditTime: 2021-08-10 10:13:28
+ * @FilePath: /Algorithm/算法练习/removeElement.js
+ * @Description:移除元素 规定复杂度为o(1)
  */
 
 

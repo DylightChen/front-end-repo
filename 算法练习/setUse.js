@@ -2,8 +2,8 @@
  * @Author: Dylight
  * @Date: 2021-07-30 16:09:22
  * @LastEditors: Dylight
- * @LastEditTime: 2021-07-30 16:12:29
- * @FilePath: /Algorithm/setUse.js
+ * @LastEditTime: 2021-08-03 16:18:28
+ * @FilePath: /Algorithm/算法练习/setUse.js
  * @Description: 交并差集合
  */
 let arr1 = [4, 6, 2, 5, 7, 4]
@@ -15,7 +15,10 @@ let arr3 = new Set([ ...arr1, ...arr2 ])
 //并集
 console.log(arr3);
 //交集
-let arr4 = new Set([...set1].filter(x => set2.has(x)))
+// let arr4 = new Set([...set1].filter(x => set2.has(x)))
+let arr4 = [...set1].filter(x => set2.has(x))
+// console.log('a'+a);
+console.log(arr4);
 console.log([...arr4]);
 //差集
 let arr5 = new Set([...set1].filter(v => !set2.has(v)))
