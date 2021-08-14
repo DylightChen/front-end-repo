@@ -2,7 +2,7 @@
  * @Author: Dylight
  * @Date: 2021-08-11 13:32:21
  * @LastEditors: Dylight
- * @LastEditTime: 2021-08-12 10:33:04
+ * @LastEditTime: 2021-08-14 13:58:48
  * @FilePath: /Algorithm/数据结构/stack.js
  * @Description: js构建栈
  */
@@ -39,7 +39,6 @@ console.log(stack.getItem());
 console.log(stack.isEmpty());
 console.log(stack.clear());
 console.log(stack.size());
-
 
 // 十进制转二进制示例
 
