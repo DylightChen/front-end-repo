@@ -2,7 +2,7 @@
  * @Author: Dylight
  * @Date: 2021-08-12 11:23:44
  * @LastEditors: Dylight
- * @LastEditTime: 2021-08-14 15:08:19
+ * @LastEditTime: 2021-08-14 18:17:12
  * @FilePath: /Algorithm/数据结构/nodeList.js
  * @Description: 链表
  */
@@ -34,11 +34,9 @@ class LinkedList {
       let current = this.#head;
       //循环  如果满足节点next 存在 将current 替换为 将current的next
       // 不满足退出循环，将当前的current.next设置为appen值
-      console.log(node);
       while (current.next) {
         current = current.next;
       }
-      console.log(current);
       current.next = node;
     }
     this.#length++;
@@ -90,6 +88,21 @@ class LinkedList {
     }
     this.#length++;
   }
+  indexOf(element) {
+    let current = this.#head;
+    let index = 0;
+    while (current) {
+      if (current.element === element) {
+        return index;
+      }
+      index++;
+      current = current.next;
+    }
+    return -1;
+  }
+  remove(element) {
+    this.removeAt(this.indexOf(element));
+  }
   getHead() {
     return this.#head;
   }
@@ -104,7 +117,39 @@ node.append(3);
 // node.append(4);
 // node.append(4);
 node.append(4);
-
 node.insert(2, 10);
+
+var mergeTwoLists = function (l1, l2) {
+  if (l1 === null) {
+    return l2;
+  }
+  if (l2 === null) {
+    return l1;
+  }
+  console.log(l1);
+  console.log(l2);
+  if (l1.element < l2.element) {
+    l1.next = mergeTwoLists(l1.next, l2);
+    return l1;
+  } else {
+    l2.next = mergeTwoLists(l1, l2.next);
+    return l2;
+  }
+};
+let node1 = new LinkedList();
+let node2 = new LinkedList();
+node1.append(1);
+node1.append(2);
+node1.append(3);
+node2.append(1);
+node2.append(2);
+node2.append(3);
+console.log(node1);
+console.log(node2);
+let a = mergeTwoLists(node1.getHead(), node2.getHead());
+console.log(JSON.stringify(a));
+console.log(node.remove(3));
 node.removeAt(1);
+console.log(node.indexOf(3));
 console.log(JSON.stringify(node.getHead()));
+export default LinkedList;
