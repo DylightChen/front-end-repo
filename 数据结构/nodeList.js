@@ -2,7 +2,7 @@
  * @Author: Dylight
  * @Date: 2021-08-12 11:23:44
  * @LastEditors: Dylight
- * @LastEditTime: 2021-08-14 18:17:12
+ * @LastEditTime: 2021-08-17 16:34:54
  * @FilePath: /Algorithm/数据结构/nodeList.js
  * @Description: 链表
  */
@@ -148,8 +148,8 @@ console.log(node1);
 console.log(node2);
 let a = mergeTwoLists(node1.getHead(), node2.getHead());
 console.log(JSON.stringify(a));
-console.log(node.remove(3));
-node.removeAt(1);
-console.log(node.indexOf(3));
+// console.log(a);
+// console.log(node.remove(3));
+// node.removeAt(1);
+// console.log(node.indexOf(3));
 console.log(JSON.stringify(node.getHead()));
-export default LinkedList;
